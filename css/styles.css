@@ -412,6 +412,10 @@ img {
     margin-right: 120px;
 }
 
+.social-links{
+    margin-right: 80px;
+}
+
 .social-list-title{
     margin-bottom: 16px;
 
@@ -434,6 +438,83 @@ img {
 .social-list-link:focus{
     background-color: #31D0AA;
 }
+
+/* ============Subscribe-form-field============== */
+
+.subscribe-text{
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    line-height: 1.5;    
+    color: var(--white-color);
+}
+
+
+.subscribe-form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.email-form-input{
+    margin-right: 24px;
+    width: 264px;
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--title-color);
+
+    
+    border: none;
+    border-color: rgba(255, 255, 255, 0.3);
+
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.submit-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    width: 165px;
+    padding: 8px 24px;
+
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+}
+
+.icon-airplane{
+    margin-left: 16px;
+    fill: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ======================================PORTFOLIO STYLES=========================== */
 
