@@ -769,27 +769,34 @@ img {
 
 
 /* fake checkbox */
-.modal-form-check-desc::before{
-    display: block;
-    margin-right: 8px;
-    content: "";
+
+.modal-form-check-fake{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--title-color);
     border-radius: 2px;
+    margin-right: 8px;
     cursor: pointer;
-    
-    transition: border var(--transition-dur-and-func);
+
+    transition: border-color var(--transition-dur-and-func);
 }
 
-.modal-form-check:checked + .modal-form-check-desc::before{
-    background-image: url(../images/modal_window/click.svg);
-    background-size: cover;
-    background-color: var(--accent-color);
+.modal-form-chek-icon{
+    opacity: 0;
 }
 
-.modal-form-check:focus +.modal-form-check-desc::before {
-    border: 1.25px solid var(--accent-color);
+
+.modal-form-check:checked + .modal-form-check-desc > .modal-form-check-fake{
+    background: var(--hover-color);
+    border-color: #404BBF;   
+}
+
+.modal-form-check:checked + .modal-form-check-desc >
+ .modal-form-check-fake > .modal-form-chek-icon{
+    opacity: 1;
 }
 
 .modal-form-check-desc{
