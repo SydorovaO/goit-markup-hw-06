@@ -464,12 +464,10 @@ img {
 .email-form-input{
     
     width: 100%;
-    padding: 8px 16px;
+    padding: 7px 16px;
 
     color: var(--white-color);
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
+    line-height: 1.5;
     background-color: var(--title-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -477,6 +475,9 @@ img {
 }
 
 .email-form-input::placeholder{
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);   
 }
 
@@ -491,13 +492,14 @@ img {
     padding: 8px 24px;
 
     background-color: var(--accent-color);
-    border: 1px solid transparent;
+    border: none;
     border-radius: 4px;
 
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .icon-airplane{
@@ -734,6 +736,7 @@ img {
 
 .modal-form-input{
     padding-left: 38px;
+    padding-right: 38px;
     font-size: 18px;
     height: 40px;
 }
@@ -751,10 +754,8 @@ img {
     height: 120px;
     padding: 8px 16px;
     resize: none;
-
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
+    font-size: 18px;
+    line-height: 1.5;
 
     transition: border var(--transition-dur-and-func);
 }
