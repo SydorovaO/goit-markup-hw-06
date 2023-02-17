@@ -684,9 +684,8 @@ img {
 
 
 .modal-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;    
     margin-bottom: 14px;
 
     font-weight: 500;
