@@ -634,12 +634,10 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 72px 24px 24px;
 
     width: 408px;
-    min-height: 584px;
+    height: 584px;
     background-color: var(--modal-background-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -685,31 +683,40 @@ img {
 }
 
 
-
 .modal-heading {
-    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+
     font-weight: 500;
     line-height: 1.5;
     color: var(--title-color);
 }
 
-.modal-form {
-    display: flex;
-    flex-direction: column;
+.modal-form-field{
+    display: block;
 }
 
 .modal-form-field + .modal-form-field{
     margin-top: 8px;
 }
 
+
 .modal-form-input-desc{
     display: block;
     margin-bottom: 4px;
-
+    
     font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--company-logo-color);}
+
+
+.modal-form-input-desc.modal-name{
     line-height: 1.33;
     letter-spacing: 0.04em;
-    color: var(--company-logo-color);}
+}
 
 .modal-form-input-wrapper{
     position: relative;
@@ -751,8 +758,10 @@ img {
 }
 
 .modal-form-message{
+    display: block;
     height: 120px;
     padding: 8px 16px;
+
     resize: none;
     font-size: 18px;
     line-height: 1.5;
@@ -818,9 +827,9 @@ img {
 }
 
 .modal-form-send{
-    align-self: center;
-    margin-bottom: 24px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 169px;
     padding: 16px 32px;
     background: var(--accent-color);
